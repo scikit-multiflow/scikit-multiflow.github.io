@@ -1,1 +1,5 @@
 theme: jekyll-theme-cayman
+gem "github-pages", group: :jekyll_plugins
+
+title: [scikit-multiflow]
+description: [A multi-output/multi-label and stream data framework.]
