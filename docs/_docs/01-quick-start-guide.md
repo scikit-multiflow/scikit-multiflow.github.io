@@ -1,8 +1,7 @@
 ---
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
-excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2017-11-15T09:49:52-05:00
+excerpt: "A quick-star guide to use scikit-multiflow."
 redirect_from:
   - /theme-setup/
 toc: false
