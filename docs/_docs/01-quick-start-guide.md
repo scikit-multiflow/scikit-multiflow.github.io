@@ -1,7 +1,7 @@
 ---
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
-excerpt: "A quick-star guide to use scikit-multiflow."
+excerpt: "A guide to start using scikit-multiflow."
 redirect_from:
   - /theme-setup/
 toc: false
