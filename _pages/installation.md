@@ -26,3 +26,18 @@ Once `numpy` is installed, we can proceed with the installation of
 ```
 
 After the installation is completed, we can start using `scikit-multiflow`.
+
+### matplotlib backend considerations
+* You may need to change your matplotlib backend, because not all backends work
+in all machines.
+* If this is the case you need to check
+[matplotlib's configuration](https://matplotlib.org/users/customizing.html).
+In the matplotlibrc file you will need to change the line:  
+    ```
+    backend     : Qt5Agg  
+    ```
+    to:  
+    ```
+    backend     : another backend that works on your machine
+    ```  
+* The Qt5Agg backend should work with most machines, but a change may be needed.

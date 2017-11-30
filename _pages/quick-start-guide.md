@@ -9,8 +9,6 @@ toc_icon: "gear"
 author_profile: false
 ---
 
-# Getting started
-
 In this tutorial we show how to use *scikit-multiflow*.
 
 ## Basic example
