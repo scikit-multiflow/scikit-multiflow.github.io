@@ -154,10 +154,12 @@ When the test finishes, the *results.csv* file will be available in the current
 path. The file contains information related to the test that generated the file.
 For this example:
 
-> \# SETUP BEGIN \
-  \# File Stream: file_name: ../datasets/covtype.csv  -  num_classes: 7  - num_classification_tasks: 1 \
-  \# Prequential Evaluator: n_wait: 200 - max_instances: 100000 - max_time: inf - output_file: results.csv - batch_size: 1 - pretrain_size: 1000 - task_type: classification - show_plotFalse - plot_options: ['performance' \
-  \# SETUP END
+```
+\# SETUP BEGIN
+\# File Stream: file_name: ../datasets/covtype.csv  -  num_classes: 7  - num_classification_tasks: 1
+\# Prequential Evaluator: n_wait: 200 - max_instances: 100000 - max_time: inf - output_file: results.csv - batch_size: 1 - pretrain_size: 1000 - task_type: classification - show_plotFalse - plot_options: ['performance'
+\# SETUP END
+```
 
 Result data in the file includes:
 * `x_count`: the number of the instance that was used for testing
