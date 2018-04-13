@@ -13,7 +13,7 @@ In this tutorial we show how to use *scikit-multiflow*.
 
 ## First example.
 
-Inthis example, we will use a data stream to train a `Hoeffding Tree (VFDT)`
+In this example, we will use a data stream to train a `Hoeffding Tree (VFDT)`
 classifier and will measure its performance using prequential evaluation:
 
 1. Create a stream
@@ -38,31 +38,31 @@ classifier and will measure its performance using prequential evaluation:
     Use default parameters.
 
     ``` python
-    classifier = HoeffdingTree()
+    ht = HoeffdingTree()
     ```
 
 3. Setup the evaluator
     ``` python
-    eval = EvaluatePrequential(show_plot=True, pretrain_size=1000, max_instances=100000)
+    evaluator = EvaluatePrequential(show_plot=True, pretrain_size=200, max_instances=20000)
     ```
     * `show_plot=True` to get a dynamic plot that is updated as the classifier is
     trained.
-    * `pretrain_size=1000` sets the number of samples passed in the first train
+    * `pretrain_size=200` sets the number of samples passed in the first train
       call.
-    * `max_instances=100000` sets the maximum number of samples to use.
+    * `max_instances=20000` sets the maximum number of samples to use.
 
 4. Run the evaluation
 
-    By calling `eval()`, we pass control to the *evaluator*, which will perform
+    By calling `evaluate()`, we pass control to the *evaluator*, which will perform
     the following sub-tasks:
-    * Check if there are instances in the stream
-    * Pass the next instance to the classifier:
+    * Check if there are samples in the stream
+    * Pass the next sample to the classifier:
       - test the classifier (using `predict()`)
       - update the classifier (using `partial_fit()`)
-    * Update the plot
+    * Update the evaluation results and plot
 
     ``` python
-    eval.eval(stream=stream, classifier=pipe)
+    evaluator.evaluate(stream=stream, model=ht)
     ```
 
 **Putting it all together:**
@@ -80,10 +80,10 @@ stream.prepare_for_use()
 ht = HoeffdingTree()
 
 # 3. Setup the evaluator
-eval = EvaluatePrequential(show_plot=True, pretrain_size=1000, max_instances=100000)
+evaluator = EvaluatePrequential(show_plot=True, pretrain_size=200, max_samples=20000)
 
 # 4. Run evaluation
-eval.eval(stream=stream, classifier=ht)
+evaluator.evaluate(stream=stream, model=ht)
 ```
 
 **Note:** Since we set `show_plot=True`, a new window will be created for the
@@ -98,19 +98,18 @@ There are cases where we want to use data stored in files. In this example we
 will train the same classifier from the First Example, but this time we will
 read the data from a (csv) file and will write the predictions to a (csv) file.
 
-1. Load the dataset as a stream
+1. Load the data set as a stream
 
-    For this purpose we will use the following:
+    For this purpose we will use the FileStream class:
 
     ``` python
-    options = FileOption(option_value="../datasets/covtype.csv", file_extension="CSV")
-    stream = FileStream(file_options)
+    stream = FileStream(filepath, target_idx, n_targets, cat_features_idx)
     ```
 
-    The `FileStream` will generate a stream using the data contained in the file
-    defined in `FileOptions`:
-    * `option_value="../datasets/covtype.csv"` indicates the path to the file.
-    * `file_extension="CSV"` indicates the type of file.
+    The `FileStream` class will generate a stream using the data contained
+    in the file.
+    * `filepath`. A string indicating the path where the data file is located.
+
 
     Once again, before using the stream, we need to *prepare it* by calling
     `prepare_for_use()`:
@@ -124,18 +123,18 @@ read the data from a (csv) file and will write the predictions to a (csv) file.
     Use default parameters.
 
     ``` python
-    classifier = HoeffdingTree()
+    ht = HoeffdingTree()
     ```
 
 3. Setup the evaluator
 
     ``` python
-    eval = EvaluatePrequential(pretrain_size=1000, max_instances=100000, output_file='results.csv')
+    evaluator = EvaluatePrequential(pretrain_size=1000, max_samples=10000, output_file='results.csv')
     ```
 
     * `pretrain_size=1000` sets the number of samples passed in the first train
       call.
-    * `max_instances=100000` sets the maximum number of samples to use.
+    * `max_samples=100000` sets the maximum number of samples to use.
     * `output_file='results.csv'` indicates that the results should be stored
      into a file. In this case a file *results.csv* will be created in the
      current path.
@@ -144,48 +143,48 @@ read the data from a (csv) file and will write the predictions to a (csv) file.
 
     By calling `eval()`, we pass control to the *evaluator*, which will perform
     the following sub-tasks:
-    * Check if there are instances in the stream
+    * Check if there are samples in the stream
     * Pass the next instance to the classifier:
      - test the classifier (using `predict()`)
      - update the classifier (using `partial_fit()`)
     * Write results to `output_file`
 
-When the test finishes, the *results.csv* file will be available in the current
+When the test finishes, the `results.csv` file will be available in the current
 path. The file contains information related to the test that generated the file.
 For this example:
 
 ```
-\# SETUP BEGIN
-\# File Stream: file_name: ../datasets/covtype.csv  -  num_classes: 7  - num_classification_tasks: 1
-\# Prequential Evaluator: n_wait: 200 - max_instances: 100000 - max_time: inf - output_file: results.csv - batch_size: 1 - pretrain_size: 1000 - task_type: classification - show_plotFalse - plot_options: ['performance'
-\# SETUP END
+# TEST CONFIGURATION BEGIN
+# File Stream: filename: elec.csv  -  n_targets: 1
+# [0] HoeffdingTree: max_byte_size: 33554432 - memory_estimate_period: 1000000 - grace_period: 200 - split_criterion: info_gain - split_confidence: 1e-07 - tie_threshold: 0.05 - binary_split: False - stop_mem_management: False - remove_poor_atts: False - no_pre_prune: False - leaf_prediction: nba - nb_threshold: 0 - nominal_attributes: [] - 
+# Prequential Evaluator: n_wait: 200 - max_samples: 10000 - max_time: inf - output_file: results.csv - batch_size: 1 - pretrain_size: 1000 - task_type: classification - show_plot: False - metrics: ['performance', 'kappa']
+# TEST CONFIGURATION END
 ```
 
 Result data in the file includes:
-* `x_count`: the number of the instance that was used for testing
+* `id`: the id of the instance that was used for testing
 * `global_performance`: overall performance (accuracy)
-* `sliding_window_performance`: sliding window performance (accuracy)
+* `sliding_performance`: sliding window performance (accuracy)
 * `global_kappa`: overall kappa statistics
-* `sliding_window_kappa`: sliding window kappa statistics
+* `sliding_kappa`: sliding window kappa statistics
 
 **Putting it all together:**
 
 ``` python
-from skmultiflow.options.file_option import FileOption
 from skmultiflow.data.file_stream import FileStream
 from skmultiflow.classification.trees.hoeffding_tree import HoeffdingTree
 from skmultiflow.evaluation.evaluate_prequential import EvaluatePrequential
 
 # 1. Create a stream
-options = FileOption(option_value="../datasets/covtype.csv", file_extension="CSV")
-stream = FileStream(file_options)
+stream = FileStream("../datasets/elec.csv")
+stream.prepare_for_use()
 
 # 2. Instantiate the HoeffdingTree classifier
 ht = HoeffdingTree()
 
 # 3. Setup the evaluator
-eval = EvaluatePrequential(pretrain_size=1000, max_instances=100000, output_file='results.csv')
+evaluator = EvaluatePrequential(pretrain_size=1000, max_samples=10000, output_file='results.csv')
 
 # 4. Run evaluation
-eval.eval(stream=stream, classifier=ht)
+evaluator.evaluate(stream=stream, model=ht)
 ```
