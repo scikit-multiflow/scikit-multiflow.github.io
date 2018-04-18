@@ -7,6 +7,7 @@ toc: True
 toc_label: "On this page"
 toc_icon: "gear"
 author_profile: false
+classes: wide
 ---
 
 In this tutorial we show how to use *scikit-multiflow*.
@@ -18,7 +19,7 @@ classifier and will measure its performance using prequential evaluation:
 
 1. Create a stream
 
-    The `WaveformGenerator` generates by default instances with 21 numeric
+    The `WaveformGenerator` generates by default samples with 21 numeric
     attributes and 3 targets, based on a random differentiation of some base
     waveforms:
 
@@ -43,14 +44,15 @@ classifier and will measure its performance using prequential evaluation:
 
 3. Setup the evaluator
     ``` python
-    evaluator = EvaluatePrequential(show_plot=True, pretrain_size=200,
-                                    max_instances=20000)
+    evaluator = EvaluatePrequential(show_plot=True,
+                                    pretrain_size=200,
+                                    max_samples=20000)
     ```
     * `show_plot=True` to get a dynamic plot that is updated as the classifier is
     trained.
     * `pretrain_size=200` sets the number of samples passed in the first train
       call.
-    * `max_instances=20000` sets the maximum number of samples to use.
+    * `max_sample=20000` sets the maximum number of samples to use.
 
 4. Run the evaluation
 
@@ -147,16 +149,18 @@ of the evaluation to a (csv) file.
 
 4. Run the evaluation
 
-    By calling `eval()`, we pass control to the *evaluator*, which will perform
+    By calling `evaluate()`, we pass control to the *evaluator*, which will perform
     the following sub-tasks:
     * Check if there are samples in the stream
-    * Pass the next instance to the classifier:
+    * Pass the next sample to the classifier:
      - test the classifier (using `predict()`)
      - update the classifier (using `partial_fit()`)
     * Write results to `output_file`
 
 When the test finishes, the `results.csv` file will be available in the current
-path. The file contains information related to the test that generated the file.
+path.
+
+The file contains information related to the test that generated the file.
 For this example:
 
 ```
@@ -167,8 +171,8 @@ For this example:
 # TEST CONFIGURATION END
 ```
 
-Result data in the file includes:
-* `id`: the id of the instance that was used for testing
+And data related to performance during the evaluation:
+* `id`: the id of the sample that was used for testing
 * `global_performance`: overall performance (accuracy)
 * `sliding_performance`: sliding window performance (accuracy)
 * `global_kappa`: overall kappa statistics
