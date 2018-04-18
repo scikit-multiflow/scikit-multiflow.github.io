@@ -18,7 +18,7 @@ Welcome to `scikit-multiflow`'s website.
 
 `scikit-multiflow` is implemented in Python given its increasing popularity in the Machine Learning community. It complements `scikit-learn`, whose primary focus is batch learning, expanding the set of Machine Learning tools on this platform. In its current state, `scikit-multiflow` contains stream generators, stream classifiers for multi-output/multi-target, change detectors and evaluation methods.
 
-To start using `scikit-multiflow` please refer to [Installation](https://scikit-multiflow.github.io//installation/) for instructions to install the package on your machine. A [Qucik-Start Guide](https://scikit-multiflow.github.io//quick-start-guide/) is also available.
+To start using `scikit-multiflow` please refer to [Installation](https://scikit-multiflow.github.io//installation/) for instructions to install the package on your machine. A [Quick-Start Guide](https://scikit-multiflow.github.io//quick-start-guide/) is also available.
 
 `scikit-multiflow` is being developed by [Télécom ParisTech](https://www.telecom-paristech.fr/eng) and [École Polytechnique](https://www.polytechnique.edu/en).
 
