@@ -9,6 +9,13 @@ header:
   cta_label: "<i class='fab fa-github'></i> Github Repository"
   cta_url: https://github.com/scikit-multiflow/scikit-multiflow
   caption: "Photo credit: [**freepik**](https://www.freepik.com/free-vector/vector-abstract-color-waves-design-element_1306739.htm)"
-excerpt: "A multi-output/multi-label and stream data framework.
-Inspired by MOA and MEKA, following scikit-learn philosophy."
+excerpt: "A multi-output/multi-label and stream data framework."
 ---
+
+Welcome to `scikit-multiflow`'s website.
+
+`scikit-multiflow` is inspired by [MOA](https://moa.cms.waikato.ac.nz/) , the most popular open source framework for data stream mining, and [MEKA](http://meka.sourceforge.net/), an open source implementation of methods for multi-label learning. `scikit-multiflow` is also inspired on [scikit-learn](http://scikit-learn.org/stable/), the most popular framework for Machine Learning. Following `scikit-learn`'s philosophy, `scikit-multiflow` aims to provide a open source framework for multi-output/multi-label and stream data mining.
+
+`scikit-multiflow` is being developed by [Télécom ParisTech](https://www.telecom-paristech.fr/eng) and [École Polytechnique](https://www.polytechnique.edu/en).
+
+As an open source project, we welcome contributions from the community.
