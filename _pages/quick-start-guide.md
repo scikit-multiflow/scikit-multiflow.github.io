@@ -43,7 +43,8 @@ classifier and will measure its performance using prequential evaluation:
 
 3. Setup the evaluator
     ``` python
-    evaluator = EvaluatePrequential(show_plot=True, pretrain_size=200, max_instances=20000)
+    evaluator = EvaluatePrequential(show_plot=True, pretrain_size=200,
+                                    max_instances=20000)
     ```
     * `show_plot=True` to get a dynamic plot that is updated as the classifier is
     trained.
@@ -80,7 +81,9 @@ stream.prepare_for_use()
 ht = HoeffdingTree()
 
 # 3. Setup the evaluator
-evaluator = EvaluatePrequential(show_plot=True, pretrain_size=200, max_samples=20000)
+evaluator = EvaluatePrequential(show_plot=True,
+                                pretrain_size=200,
+                                max_samples=20000)
 
 # 4. Run evaluation
 evaluator.evaluate(stream=stream, model=ht)
@@ -94,16 +97,17 @@ plot:
 
 ## Load data from a file as a stream and save test results into a file.
 
-There are cases where we want to use data stored in files. In this example we
-will train the same classifier from the First Example, but this time we will
-read the data from a (csv) file and will write the predictions to a (csv) file.
+There are cases where we want to use data stored in files. In this
+example we will train a Hoeffding Tree classifier, but this time
+we will read the data from a (csv) file and will write the results
+of the evaluation to a (csv) file.
 
 1. Load the data set as a stream
 
     For this purpose we will use the FileStream class:
 
     ``` python
-    stream = FileStream(filepath, target_idx, n_targets, cat_features_idx)
+    stream = FileStream(filepath)
     ```
 
     The `FileStream` class will generate a stream using the data contained
@@ -129,7 +133,9 @@ read the data from a (csv) file and will write the predictions to a (csv) file.
 3. Setup the evaluator
 
     ``` python
-    evaluator = EvaluatePrequential(pretrain_size=1000, max_samples=10000, output_file='results.csv')
+    evaluator = EvaluatePrequential(pretrain_size=1000,
+                                    max_samples=10000,
+                                    output_file='results.csv')
     ```
 
     * `pretrain_size=1000` sets the number of samples passed in the first train
@@ -183,7 +189,9 @@ stream.prepare_for_use()
 ht = HoeffdingTree()
 
 # 3. Setup the evaluator
-evaluator = EvaluatePrequential(pretrain_size=1000, max_samples=10000, output_file='results.csv')
+evaluator = EvaluatePrequential(pretrain_size=1000,
+                                max_samples=10000,
+                                output_file='results.csv')
 
 # 4. Run evaluation
 evaluator.evaluate(stream=stream, model=ht)
