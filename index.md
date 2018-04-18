@@ -14,7 +14,11 @@ excerpt: "A multi-output/multi-label and stream data framework."
 
 Welcome to `scikit-multiflow`'s website.
 
-`scikit-multiflow` is inspired by [MOA](https://moa.cms.waikato.ac.nz/) , the most popular open source framework for data stream mining, and [MEKA](http://meka.sourceforge.net/), an open source implementation of methods for multi-label learning. `scikit-multiflow` is also inspired on [scikit-learn](http://scikit-learn.org/stable/), the most popular framework for Machine Learning. Following `scikit-learn`'s philosophy, `scikit-multiflow` is an open source framework for multi-output/multi-label and stream data mining. 
+`scikit-multiflow` is inspired by [MOA](https://moa.cms.waikato.ac.nz/), the most popular open source framework for data stream mining, and [MEKA](http://meka.sourceforge.net/), an open source implementation of methods for multi-label learning. `scikit-multiflow` is also inspired on [scikit-learn](http://scikit-learn.org/stable/), the most popular framework for Machine Learning. Following `scikit-learn`'s philosophy, `scikit-multiflow` is an open source framework for multi-output/multi-label and stream data mining. 
+
+<p align="center">
+  <img src="../assets/images/example_classifier_plot.gif" alt="skmultiflow_plot" style="width:850px;">
+</p>
 
 `scikit-multiflow` is implemented in Python given its increasing popularity in the Machine Learning community. It complements `scikit-learn`, whose primary focus is batch learning, expanding the set of Machine Learning tools on this platform. In its current state, `scikit-multiflow` contains stream generators, stream classifiers for multi-output/multi-target, change detectors and evaluation methods.
 
