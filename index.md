@@ -10,6 +10,28 @@ header:
   cta_url: https://github.com/scikit-multiflow/scikit-multiflow
   caption: "Photo credit: [**freepik**](https://www.freepik.com/free-vector/vector-abstract-color-waves-design-element_1306739.htm)"
 excerpt: "A multi-output/multi-label and stream data framework."
+feature_row:
+  - image_path: assets/images/fa-cogs.png
+    alt: "Installation"
+    title: "Installation"
+    excerpt: "Install the package on your machine."
+    url: https://scikit-multiflow.github.io/scikit-multiflow/installation.html
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/fa-rocket.png
+    alt: "User Guide"
+    title: "User Guide"
+    excerpt: "Start using `scikit-multiflow`"
+    url: https://scikit-multiflow.github.io/scikit-multiflow/user-guide.html
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/fa-book.png
+    alt: "Documentation"
+    title: "Documentation"
+    excerpt: "`scikit-multiflow` documentation"
+    url: https://scikit-multiflow.github.io/scikit-multiflow/index.html
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 ---
 
 Welcome to `scikit-multiflow`'s website.
@@ -22,8 +44,8 @@ Welcome to `scikit-multiflow`'s website.
 
 `scikit-multiflow` is implemented in Python given its increasing popularity in the Machine Learning community. It complements `scikit-learn`, whose primary focus is batch learning, expanding the set of Machine Learning tools on this platform. In its current state, `scikit-multiflow` contains stream generators, stream classifiers for multi-output/multi-target, change detectors and evaluation methods.
 
-To start using `scikit-multiflow` please refer to [Installation](https://scikit-multiflow.github.io//installation/) for instructions to install the package on your machine. A [Quick-Start Guide](https://scikit-multiflow.github.io//quick-start-guide/) is also available.
-
 `scikit-multiflow` is being developed by [Télécom ParisTech](https://www.telecom-paristech.fr/eng) and [École Polytechnique](https://www.polytechnique.edu/en).
 
 As an open source project, we welcome contributions from the community.
+
+{% include feature_row %}

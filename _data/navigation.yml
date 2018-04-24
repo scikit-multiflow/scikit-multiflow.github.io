@@ -1,7 +1,7 @@
 main:
-  - title: "Quick-Start Guide"
-    url: /quick-start-guide/
+  - title: "User Guide"
+    url: https://scikit-multiflow.github.io/scikit-multiflow/user-guide.html
   - title: "Installation"
-    url: /installation/
+    url: https://scikit-multiflow.github.io/scikit-multiflow/installation.html
   - title: "API Documentation"
     url: https://scikit-multiflow.github.io/scikit-multiflow/
