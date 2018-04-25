@@ -46,6 +46,11 @@ Welcome to `scikit-multiflow`'s website.
 
 `scikit-multiflow` is being developed by [Télécom ParisTech](https://www.telecom-paristech.fr/eng) and [École Polytechnique](https://www.polytechnique.edu/en).
 
-As an open source project, we welcome [contributions](https://github.com/scikit-multiflow/scikit-multiflow/blob/master/CONTRIBUTING.md) from the community.
-
 {% include feature_row %}
+## Community
+
+### Users
+A mailing list is available for users to learn, teach and ask questions: [scikit-multiflow users](https://groups.google.com/forum/#!forum/scikit-multiflow-users)
+
+### Contributing
+As an open source project, we welcome contributions from the community. Please refer to the [GitHub Repository](https://github.com/scikit-multiflow/scikit-multiflow/blob/master/CONTRIBUTING.md) for further information.
