@@ -14,21 +14,21 @@ feature_row:
   - image_path: assets/images/fa-cogs.png
     alt: "Installation"
     title: "Installation"
-    excerpt: "Install the package on your machine."
+    excerpt: "Install `scikit-multiflow` on your machine."
     url: https://scikit-multiflow.github.io/scikit-multiflow/installation.html
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/fa-rocket.png
     alt: "User Guide"
     title: "User Guide"
-    excerpt: "Start using `scikit-multiflow`"
+    excerpt: "Start using `scikit-multiflow`."
     url: https://scikit-multiflow.github.io/scikit-multiflow/user-guide.html
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/fa-book.png
     alt: "Documentation"
     title: "Documentation"
-    excerpt: "`scikit-multiflow` documentation"
+    excerpt: "`scikit-multiflow` package documentation."
     url: https://scikit-multiflow.github.io/scikit-multiflow/index.html
     btn_label: "Read More"
     btn_class: "btn--primary"
