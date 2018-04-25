@@ -21,7 +21,7 @@ feature_row:
   - image_path: /assets/images/fa-rocket.png
     alt: "User Guide"
     title: "User Guide"
-    excerpt: "Start using `scikit-multiflow`."
+    excerpt: "Read more about `scikit-multiflow` core elements and how to start using it."
     url: https://scikit-multiflow.github.io/scikit-multiflow/user-guide.html
     btn_label: "Read More"
     btn_class: "btn--primary"
