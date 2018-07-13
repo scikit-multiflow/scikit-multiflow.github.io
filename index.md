@@ -47,6 +47,7 @@ Welcome to `scikit-multiflow`'s website.
 `scikit-multiflow` is being developed by [Télécom ParisTech](https://www.telecom-paristech.fr/eng) and [École Polytechnique](https://www.polytechnique.edu/en).
 
 {% include feature_row %}
+
 ## Community
 
 ### Users
@@ -54,3 +55,9 @@ A mailing list is available for users to learn, teach and ask questions: [scikit
 
 ### Contributing
 As an open source project, we welcome contributions from the community. Please refer to the [GitHub Repository](https://github.com/scikit-multiflow/scikit-multiflow/blob/master/CONTRIBUTING.md) for further information.
+
+## Citing `scikit-multiflow`
+
+If you want to cite `scikit-multiflow` in a publication, please refer to the following paper:
+
+[Montiel, J., Read, J., Bifet, A., Abdessalem, T.: Scikit-Multiflow: A Multi-outputStreaming Framework. CoRR abs/1807.04662 (2018)](https://arxiv.org/abs/1807.04662) \| [Bibtex](/assets/misc/skmultiflow.bib)
