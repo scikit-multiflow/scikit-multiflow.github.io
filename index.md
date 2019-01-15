@@ -60,4 +60,4 @@ As an open source project, we welcome contributions from the community. Please r
 
 If you want to cite `scikit-multiflow` in a publication, please refer to the following paper:
 
-[Montiel, J., Read, J., Bifet, A., Abdessalem, T.: Scikit-Multiflow: A Multi-outputStreaming Framework. CoRR abs/1807.04662 (2018)](https://arxiv.org/abs/1807.04662) \| [Bibtex](/assets/misc/skmultiflow.bib)
+[Scikit-Multiflow: A Multi-outputStreaming Framework. Jacob Montiel, Jesse Read, Albert Bifet, Talel Abdessalem; Journal of Machine Learning Research, 19(72):1−5, 2018](http://jmlr.org/papers/v19/18-251.html) \| [Bibtex](/assets/misc/skmultiflow.bib)
