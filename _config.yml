@@ -8,6 +8,7 @@
 remote_theme: "mmistakes/minimal-mistakes"
 
 plugins:
+  - jekyll-include-cache
   - jekyll-remote-theme
 
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
