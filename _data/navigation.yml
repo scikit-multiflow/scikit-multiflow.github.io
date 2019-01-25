@@ -5,3 +5,5 @@ main:
     url: https://scikit-multiflow.github.io/scikit-multiflow/installation.html
   - title: "Documentation"
     url: https://scikit-multiflow.github.io/scikit-multiflow/
+  - title: "News"
+    url: /news-by-year
