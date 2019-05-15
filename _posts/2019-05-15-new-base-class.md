@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Updated base class to be introduced in release `0.3.0`
+title: Improved base class to be introduced in release `0.3.0`
 toc: False
 author_profile: False
 category: ['announcement']
