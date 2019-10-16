@@ -42,19 +42,21 @@ Welcome to `scikit-multiflow`'s website.
   <img src="../assets/images/example_classifier_plot.gif" alt="skmultiflow_plot" style="width:850px;">
 </p>
 
-`scikit-multiflow` is implemented in Python given its increasing popularity in the Machine Learning community. It complements `scikit-learn`, whose primary focus is batch learning, expanding the set of Machine Learning tools on this platform. In its current state, `scikit-multiflow` contains stream generators, stream classifiers for multi-output/multi-target, change detectors and evaluation methods.
+`scikit-multiflow` is implemented in Python given its increasing popularity in the Machine Learning community. It complements `scikit-learn`, whose primary focus is batch learning, expanding the set of Machine Learning tools on this platform. In its current state, `scikit-multiflow` contains stream generators, stream learning methods for multi-output/multi-target, change detectors and evaluation methods.
 
-`scikit-multiflow` is being developed by [Télécom ParisTech](https://www.telecom-paristech.fr/eng) and [École Polytechnique](https://www.polytechnique.edu/en).
+`scikit-multiflow` is developed by the [University of Waikato](https://www.waikato.ac.nz/), [Télécom ParisTech](https://www.telecom-paristech.fr/eng), the [École Polytechnique](https://www.polytechnique.edu/en) and the open source community.
 
 {% include feature_row %}
 
 ## Community
 
 ### Users
-A mailing list is available for users to learn, teach and ask questions: [scikit-multiflow users](https://groups.google.com/forum/#!forum/scikit-multiflow-users)
+The following options are available for users to learn, teach and ask questions
+- Google group: [scikit-multiflow users](https://groups.google.com/forum/#!forum/scikit-multiflow-users)
+- Gitter channel: [scikit-multiflow/community](https://gitter.im/scikit-multiflow/community)
 
 ### Contributing
-As an open source project, we welcome contributions from the community. Please refer to the [GitHub Repository](https://github.com/scikit-multiflow/scikit-multiflow/blob/master/CONTRIBUTING.md) for further information.
+As an open source project, we welcome contributions from the community. Please refer to the [contributor’s page ](https://github.com/scikit-multiflow/scikit-multiflow/blob/master/CONTRIBUTING.md) for further information.
 
 ## Citing `scikit-multiflow`
 
