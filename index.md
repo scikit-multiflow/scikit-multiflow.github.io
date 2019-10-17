@@ -44,7 +44,7 @@ Welcome to `scikit-multiflow`'s website.
 
 `scikit-multiflow` is implemented in Python given its increasing popularity in the Machine Learning community. It complements `scikit-learn`, whose primary focus is batch learning, expanding the set of Machine Learning tools on this platform. In its current state, `scikit-multiflow` contains stream generators, stream learning methods for multi-output/multi-target, change detectors and evaluation methods.
 
-`scikit-multiflow` is developed by the [University of Waikato](https://www.waikato.ac.nz/), [Télécom ParisTech](https://www.telecom-paristech.fr/eng), the [École Polytechnique](https://www.polytechnique.edu/en) and the open source community.
+`scikit-multiflow` is developed by [Télécom ParisTech](https://www.telecom-paristech.fr/eng), the [École Polytechnique](https://www.polytechnique.edu/en), the [University of Waikato](https://www.waikato.ac.nz/), and the open source community.
 
 {% include feature_row %}
 
@@ -63,3 +63,13 @@ As an open source project, we welcome contributions from the community. Please r
 If you want to cite `scikit-multiflow` in a publication, please refer to the following paper:
 
 [Scikit-Multiflow: A Multi-outputStreaming Framework. Jacob Montiel, Jesse Read, Albert Bifet, Talel Abdessalem; Journal of Machine Learning Research, 19(72):1−5, 2018](http://jmlr.org/papers/v19/18-251.html) \| [Bibtex](/assets/misc/skmultiflow.bib)
+
+## Sponsors
+<p align="center">
+  <a href="https://www.telecom-paristech.fr/eng"><img src="/assets/images/logo-telecom-paristech.png" height="80" width="80" style="vertical-align:bottom"></a>
+  <a href="https://www.polytechnique.edu/en"><img src="/assets/images/logo-polytechnique.png" height="200" width="200" style="vertical-align:bottom"></a>
+  <a href="https://www.ip-paris.fr/en/"><img src="/assets/images/logo-ipparis.png" height="280" width="280" style="vertical-align:bottom"></a>
+  <a href="https://www.waikato.ac.nz/"><img src="/assets/images/logo-waikato.png" height="220" width="220" style="vertical-align:bottom"></a>
+</p>
+
+<!-- ## Collaborating institutions -->
