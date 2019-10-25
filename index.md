@@ -72,4 +72,7 @@ If you want to cite `scikit-multiflow` in a publication, please refer to the fol
   <a href="https://www.waikato.ac.nz/"><img src="/assets/images/logo-waikato.png" height="220" width="220" style="vertical-align:bottom"></a>
 </p>
 
-<!-- ## Collaborating institutions -->
+## Collaborating institutions/groups
+<p align="center">
+  <img src="/assets/images/logo-icmc.png" height="180" width="180" style="vertical-align:bottom">
+</p>
