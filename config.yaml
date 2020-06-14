@@ -1,0 +1,122 @@
+baseURL: https://scikit-multiflow.github.io/
+languageCode: en-us
+title: scikit-multiflow
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds: ["taxonomyTerm"]
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy 
+  description: Machine learning package for streaming data in Python
+  navColor: blue
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/skmultiflow-logo-wide.svg
+    link: /
+  font:
+    name: "Lato"
+    sizes: [400,900]
+  hero:
+    # Main hero title
+    title: 
+    # Hero subtitle (optional)
+    subtitle: A machine learning package for streaming data in Python
+    # Button text
+    buttontext: GitHub repository
+    # Where the main hero button links to
+    buttonlink: "https://github.com/scikit-multiflow/scikit-multiflow"
+    # Hero image (from static/images/___)
+    image: logos/skmultiflow-logo-wide.svg
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Installation
+    url: https://scikit-multiflow.readthedocs.io/en/stable/installation.html
+  - title: Documentation
+    url: https://scikit-multiflow.readthedocs.io/en/stable/
+  - title: User Guide
+    url: https://scikit-multiflow.readthedocs.io/en/stable/user-guide/user-guide.html
+  - title: Community
+    url: /community
+  - title: About
+    url: /about
+  - title: News
+    url: /posts
+  
+  keyfeatures:
+    features:
+    - title: Incremental learning
+      text: Stream learning models are created incrementally and are updated continuously. They are suitable for big data applications where real-time response is vital.
+    - title: Adaptive learning
+      text: Changes in data distribution harm learning. Adaptive methods are specifically designed to be robust to concept drift changes in dynamic environments.
+    - title: Resource-wise efficient
+      text: Streaming techniques efficiently handle resources such as memory and processing time given the unbounded nature of data streams. 
+    - title: Easy to use
+      text: scikit-multiflow is designed for users with any experience level. Experiments are easy to design, setup, and run. Existing methods are easy to modify and extend.
+    - title: Stream learning tools
+      text: In its current state, scikit-multiflow contains data generators, multi-output/multi-target stream learning methods, change detection methods, evaluation methods, and more.
+    - title: Open source
+      text: Distributed under the [BSD 3-Clause](https://github.com/scikit-multiflow/scikit-multiflow/blob/master/LICENSE), scikit-multiflow is developed and maintained [publicly on GitHub](https://github.com/scikit-multiflow/scikit-multiflow) by an active, diverse and growing [community](/community).
+    
+  institutions:
+    sponsor_title: Sponsors
+    sponsor_content: scikit-multiflow receives funding from the following sources
+    partner_title: Collaborating institutions/groups
+    partner_content: Organizations and groups whose members contribute to scikit-multiflow
+
+  use_cases:
+    title: Use cases
+    subtitle: Learning tasks supported in scikit-multiflow
+    features:
+    - title: Supervised learning
+      text: When working with labeled data. Depending on the target type can be either classification (discrete values) or regression (continuous values)
+    - title: Single/multi output
+      text: Single-output methods predict a single target-label (binary or multi-class) for classification or a single target-value for regression. Multi-output methods simultaneously predict multiple variables given an input.
+    - title: Concept drift detection
+      text: Changes in data distribution can harm learning. Drift detection methods are designed to rise an alarm in the presence of drift and are used alongside learning methods to improve their robustness against this phenomenon in evolving data streams.
+    - title: Unsupervised learning
+      text: When working with unlabeled data. For example, anomaly detection where the goal is the identification of rare events or samples which differ significantly from the majority of the data.
+    # - title: Instance and batch incremental learning
+    #   text: Instance-incremental methods use a single data sample at a time to train (update their internal state). On the other hand, batch-incremental methods use mini-batches of data.
+  
+  showcase:
+    title: Monitor performance
+    subtitle: Prequential evaluation example
+    image: /example_classifier_plot.gif
+  
+  footer:
+    # Logo (from /images/logos/___)
+    logo: skmultiflow-logo.svg
+    socialmediatitle: Follow Us
+    socialmedia:
+    - link: https://github.com/scikit-multiflow/scikit-multiflow
+      icon: github
+    - link: https://gitter.im/scikit-multiflow/community
+      icon: gitter
+    quicklinks:
+      column1:
+        links:
+        - text: Install
+          link: https://scikit-multiflow.readthedocs.io/en/stable/installation.html
+        - text: Documentation
+          link: https://scikit-multiflow.readthedocs.io/en/stable/index.html
+        - text: User Guide
+          link: https://scikit-multiflow.readthedocs.io/en/stable/user-guide/user-guide.html
+        - text: Citation
+          link: /citing
+      column2:
+        links:
+        - text: Community
+          link: /community
+        - text: Contribute
+          link: https://github.com/scikit-multiflow/scikit-multiflow/blob/master/CONTRIBUTING.md
+        - text: About
+          link: /about
+        - text: News
+          link: /posts

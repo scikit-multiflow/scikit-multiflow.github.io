@@ -1,0 +1,32 @@
+<div class="partner-images">
+    <img src="/images/logos/logo-icmc.png" height="180" width="180" alt="ICMC logo">
+</div>
+
+<style>
+    .partner-images {
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .partner-images > a {
+        height: 75px;
+        width: auto;
+        padding: 0 30px;
+        margin: 30px 0;
+    }
+
+    @media only screen and (max-width: 850px) {
+        .partner-images {
+            flex-direction: column;
+        }
+
+        .partner-images > img {
+            height: auto;
+            margin: 30px 0;
+            padding: 0;
+        }
+    }
+</style>

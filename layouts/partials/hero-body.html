@@ -1,0 +1,28 @@
+{{- $hero       := .Site.Params.hero }}
+{{- $title      := index $hero "title" }}
+{{- $subtitle   := index $hero "subtitle" }}
+{{- $buttonText := index $hero "buttontext" }}
+{{- $buttonLink := index $hero "buttonlink" }}
+{{- $image      := index $hero "image" }}
+<div class="hero-container">
+  <div class="hero-content">
+      <div class="hero-title-content">
+        <div class="flex-column">
+          <div class="hero-title">
+              {{ $title }}
+              <img class="hero-logo" src="{{ printf "/images/%s" $image | relURL }}" alt="scikit-multiflow logo.">
+          </div>
+        <div class="flex-column">
+          {{ with $subtitle }}
+          <div class="hero-subtitle">
+              {{ . }}
+          </div>
+          {{ end }}
+        <div class="hero-cta">
+          <a href="{{ $buttonLink }}"><button class="cta-button">{{ $buttonText }}</button></a>
+        </div>
+      </div>
+        </div>
+      </div>
+  </div>
+</div>

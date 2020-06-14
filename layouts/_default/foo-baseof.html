@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "meta.html" . }}
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ partial "css.html" . }}
+  </head>
+  <body>
+    <!-- Preloader. Set to true for front-page fade-in animation -->
+    {{ if .IsHome }}
+    <div id="preloader"></div>
+    {{ end }}
+
+    {{ block "main" . }}
+    {{ end }}
+
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#" id="backtotop-color"></a></div>
+
+    {{ if .Site.Params.sidebar }}
+    {{ partial "sidebar.html" . }}
+    {{ end }}
+
+    {{ partial "javascript.html" . }}
+  </body>
+</html>
