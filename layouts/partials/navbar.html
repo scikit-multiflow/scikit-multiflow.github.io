@@ -11,7 +11,7 @@
       {{ if not .IsHome }}
         {{- if $navbarLogo}}
             <a id="navbar-item" class="navbar-item" href="{{ $navbarLogo.link }}">
-                <img src="{{ printf "/images/%s" $navbarLogo.image | relURL }}" alt="scikit-multiflow logo" width="260" height="35.049133" alt="scikit-multiflow logo">
+                <img src="{{ printf "/images/%s" $navbarLogo.image | relURL }}" alt="scikit-multiflow logo" width="250" height="35" alt="scikit-multiflow logo">
             </a>
         {{- end}}
       {{ end }}
