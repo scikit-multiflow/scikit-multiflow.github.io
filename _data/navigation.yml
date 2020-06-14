@@ -1,9 +1,0 @@
-main:
-  - title: "User Guide"
-    url: https://scikit-multiflow.github.io/scikit-multiflow/user-guide.html
-  - title: "Installation"
-    url: https://scikit-multiflow.github.io/scikit-multiflow/installation.html
-  - title: "Documentation"
-    url: https://scikit-multiflow.github.io/scikit-multiflow/
-  - title: "News"
-    url: /news-by-year
