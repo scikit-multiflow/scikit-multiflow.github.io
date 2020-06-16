@@ -2,7 +2,7 @@ baseURL: https://scikit-multiflow.github.io/
 languageCode: en-us
 title: scikit-multiflow
 theme: hugo-fresh
-googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+googleAnalytics: UA-169598487-2
 # Disables warnings
 disableKinds: ["taxonomyTerm"]
 markup:
