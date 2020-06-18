@@ -23,7 +23,8 @@
       {{ $paginator := .Paginate .Data.Pages }}
       {{ range $paginator.Pages }}
       <div>
-        <h2><a href="{{ .RelPermalink }}">{{.Date.Format "2006-01-02"}} | {{ .Title }}</a></h2>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{.Date.Format "2006-01-02"}}<br>
         {{ .Summary }}
       </div>
       {{ if .Truncated }}
