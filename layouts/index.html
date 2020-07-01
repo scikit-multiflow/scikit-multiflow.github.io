@@ -15,12 +15,8 @@
     {{ partial "showcase.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.institutions }}
-    {{ partial "institutions.html" . }}
-    {{ end }}
-
-    {{ if .Site.Params.citing }}
-    {{ partial "citing.html" . }}
+    {{ if .Site.Params.extra_info }}
+    {{ partial "extra_info.html" . }}
     {{ end }}
 
     {{ if .Site.Params.tabs }}

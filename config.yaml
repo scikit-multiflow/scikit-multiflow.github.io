@@ -64,15 +64,13 @@ params:
     - title: Open source
       text: Distributed under the [BSD 3-Clause](https://github.com/scikit-multiflow/scikit-multiflow/blob/master/LICENSE), scikit-multiflow is developed and maintained [publicly on GitHub](https://github.com/scikit-multiflow/scikit-multiflow) by an active, diverse and growing [community](/community).
     
-  institutions:
+  extra_info:
     sponsor_title: Sponsors
     sponsor_content: scikit-multiflow receives funding from the following sources
     partner_title: Collaborating institutions/groups
     partner_content: Organizations and groups whose members contribute to scikit-multiflow
-  
-  citing:
-    text: Ifyou want to cite scikit-multiflow, please use the following [JMLR paper](http://jmlr.org/papers/v19/18-251.html) ([bibtex](misc/skmultiflow.bib)).
-    citation: "> Montiel, J., Read, J., Bifet, A., & Abdessalem, T. (2018). Scikit-multiflow: A multi-output streaming framework. The Journal of Machine Learning Research, 19(72):1−5."
+    citing: If you want to cite scikit-multiflow, please use the following [JMLR paper](http://jmlr.org/papers/v19/18-251.html) ([bibtex](misc/skmultiflow.bib)).
+    reference: "> Montiel, J., Read, J., Bifet, A., & Abdessalem, T. (2018). Scikit-multiflow: A multi-output streaming framework. The Journal of Machine Learning Research, 19(72):1−5."
     
 
 

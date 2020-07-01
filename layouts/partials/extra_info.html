@@ -1,0 +1,24 @@
+{{- $extra_info         := .Site.Params.extra_info }}
+{{- $sponsor_title      := index $extra_info "sponsor_title" }}
+{{- $partner_title      := index $extra_info "partner_title" }}
+{{- $citing             := index $extra_info "citing" }}
+{{- $reference          := index $extra_info "reference" }}
+<section class="section section-feature-grey">
+    <div class="container">
+        <h5 class="title is-5">{{ $sponsor_title }}</h2>
+        {{ partial "sponsors.html" . }}
+    </div>
+    <div class="container">
+        <h5 class="title is-5">{{ $partner_title }}</h2>
+        {{ partial "partners.html" . }}
+    </div>
+    <div class="container">
+        <h5 class="title is-5">Citing</h5>
+    </div>
+    <div class="container">
+        <br>
+        {{ $citing  | markdownify }}
+        <br>
+        {{ $reference  | markdownify }}
+    </div>
+</section>
