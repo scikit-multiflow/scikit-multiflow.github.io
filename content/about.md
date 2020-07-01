@@ -25,6 +25,26 @@ Development of  `scikit-multiflow` is performed by the development team and the 
 
 A list including past members and major contributors is available [here](https://github.com/scikit-multiflow/scikit-multiflow/blob/master/AUTHORS.md). We also acknowledge the [individual members](https://github.com/scikit-multiflow/scikit-multiflow/graphs/contributors) of the open-source community who have contributed to this project.
 
+## Citing
+
+If `scikit-multiflow` has been useful for your research and you would like to cite it in an academic publication, please use the following [paper](http://jmlr.org/papers/v19/18-251.html):
+
+> Montiel, J., Read, J., Bifet, A., & Abdessalem, T. (2018). Scikit-multiflow: A multi-output streaming framework. The Journal of Machine Learning Research, 19(72):1−5.
+
+
+{{< highlight bibtex >}}
+@article{scikit-multiflow,
+  author  = {Jacob Montiel and Jesse Read and Albert Bifet and Talel Abdessalem},
+  title   = {Scikit-Multiflow: A Multi-output Streaming Framework },
+  journal = {Journal of Machine Learning Research},
+  year    = {2018},
+  volume  = {19},
+  number  = {72},
+  pages   = {1-5},
+  url     = {http://jmlr.org/papers/v19/18-251.html}
+}
+{{< / highlight >}}
+
 ## Logo
 
 The `scikit-multiflow` logo is based on the design by Vectortwins / Freepik. The font used is Flux Regular.

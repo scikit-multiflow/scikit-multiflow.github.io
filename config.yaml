@@ -69,6 +69,12 @@ params:
     sponsor_content: scikit-multiflow receives funding from the following sources
     partner_title: Collaborating institutions/groups
     partner_content: Organizations and groups whose members contribute to scikit-multiflow
+  
+  citing:
+    text: Ifyou want to cite scikit-multiflow, please use the following [JMLR paper](http://jmlr.org/papers/v19/18-251.html) ([bibtex](misc/skmultiflow.bib)).
+    citation: "> Montiel, J., Read, J., Bifet, A., & Abdessalem, T. (2018). Scikit-multiflow: A multi-output streaming framework. The Journal of Machine Learning Research, 19(72):1−5."
+    
+
 
   use_cases:
     title: Use cases
@@ -108,8 +114,8 @@ params:
           link: https://scikit-multiflow.readthedocs.io/en/stable/index.html
         - text: User Guide
           link: https://scikit-multiflow.readthedocs.io/en/stable/user-guide/user-guide.html
-        - text: Citation
-          link: /citing
+        - text: Citing
+          link: /about#citing
       column2:
         links:
         - text: Community
