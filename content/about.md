@@ -5,7 +5,7 @@ sidebar: false
 
 `scikit-multiflow` is an open-source machine learning package for streaming data. It extends the scientific tools available in the Python ecosystem. `scikit-multiflow` is intended for streaming data applications where data is continuously generated and must be processed and analyzed on the go. Data samples are not stored, so learning methods are exposed to new data only once.
 
-The (theoretical) infinite nature of data stream poses additional challenges to learning. Resources such as memory and time are limited, and stream learning methods must efficiently handle resources. Dynamic environment imply that data can change over time, a change in data distribution is known as concept drift. Concept drift results in model degradation if not handled properly. Drift-aware methods are designed to be robust against concept drift. 
+The (theoretical) infinite nature of data stream poses additional challenges. While data in unbounded, resources such as memory and time are limited, therefore stream learning methods must be efficient. Additionally, dynamic environments imply that data can change over time. The change in the distribution of data is known as concept drift and can lead to model performance degradation if not handled properly. Drift-aware stream learning methods are especially designed to be robust against this phenomenon.
 
 ## Ecosystem
 
