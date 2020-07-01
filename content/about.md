@@ -27,23 +27,9 @@ A list including past members and major contributors is available [here](https:/
 
 ## Citing
 
-If `scikit-multiflow` has been useful for your research and you would like to cite it in an academic publication, please use the following [paper](http://jmlr.org/papers/v19/18-251.html):
+If `scikit-multiflow` has been useful for your research and you would like to cite it in an academic publication, please use the following [paper](http://jmlr.org/papers/v19/18-251.html) ([bibtex](misc/skmultiflow.bib)):
 
 > Montiel, J., Read, J., Bifet, A., & Abdessalem, T. (2018). Scikit-multiflow: A multi-output streaming framework. The Journal of Machine Learning Research, 19(72):1−5.
-
-
-{{< highlight bibtex >}}
-@article{scikit-multiflow,
-  author  = {Jacob Montiel and Jesse Read and Albert Bifet and Talel Abdessalem},
-  title   = {Scikit-Multiflow: A Multi-output Streaming Framework },
-  journal = {Journal of Machine Learning Research},
-  year    = {2018},
-  volume  = {19},
-  number  = {72},
-  pages   = {1-5},
-  url     = {http://jmlr.org/papers/v19/18-251.html}
-}
-{{< / highlight >}}
 
 ## Logo
 
